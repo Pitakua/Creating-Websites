@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>The Huarache Clan</title>
+    <meta name="description"
+          content="Find course materials, collect course materials, share course materials">
+    <meta name="keywords" content="course reader, course materials">
+    <meta name="author" content="Pitakua">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/css_reset.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Indie+Flower'>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+</head>
+<body>
+<header>
+    <a href="#" class="anchor-wrapper">
+        <div class="logo" id="greater-commons">#TirandoBarrio</div>
+    </a>
+
+    <div class="landing-sign-in">
+        <div class="sign-in-text">Have an account?</div>
+        <a href="#" class="anchor-wrapper" id="sign-in">
+            <div class="sign-in-box">Sign In</div>
+        </a>
+    </div>
+</header>
+<section class="landing-content">
+    <h1>Huarache</h1>
+
+    <h1 class="new">Clan</h1>
+</section>
+
+<section class="landing-section">
+    <h2 class="landing-quote" id="lhm">
+        "The Huarache Clan is a collective of and community organizers who help indigenous communities and their rights.
+        They
+        are a grassroots organization that is dedicated to help them in every possible way, wether is by learning how to
+        read, speak english, dance, understand the laws and their rights, ect. Most importantly,
+        they are proud of wearing their huaraches which translates to sandals"
+    </h2>
+    <a href="#" class="make-great-button" id="make-my">Enter</a>
+    <nav>
+        <div class="anchor-wrapper text-in-box" id="create">Create</div>
+        <div class="anchor-wrapper text-in-box" id="become">Share</div>
+        <div class="anchor-wrapper text-in-box" id="find">Contact Us</div>
+    </nav>
+</section>
+<script>
+    var x = document.getElementById("lhm");
+    document.getElementById("create").addEventListener("mouseover", mouseOver);
+    document.getElementById("become").addEventListener("mouseover", mouseOver1);
+    document.getElementById("find").addEventListener("mouseover", mouseOver2);
+    document.getElementById("create").addEventListener("mouseout", mouseOut);
+    document.getElementById("become").addEventListener("mouseout", mouseOut);
+    document.getElementById("find").addEventListener("mouseout", mouseOut);
+    document.getElementById("sign-in").addEventListener("click", myAlert);
+    document.getElementById("make-my").addEventListener("click", makeMyClassesGreat);
+    document.getElementById("greater-commons").addEventListener("click", aboutGreaterCommons);
+
+    function myAlert() {
+        alert("The button will launch the sign-in page.");
+    }
+
+    function makeMyClassesGreat() {
+        alert("The button will show one of the following: " +
+        "(1) a current user who is logged-in will be taken to their account, or, " +
+        "(2) a 'Welcome to CommonGrounds' tour page with sign-up / login options");
+    }
+
+    function aboutGreaterCommons() {
+        alert("The button will take the user to an about page.");
+    }
+
+    function mouseOver() {
+        x.innerHTML = "";
+        x.style.width = "65%";
+        x.innerHTML = "" +
+        "\"Create some good connections with our partners and friends.\"";
+
+    }
+    function mouseOver1() {
+        x.innerHTML = "";
+        x.style.width = "75%";
+        x.innerHTML = "" +
+        "\"Share any ideas of what you would like to see in the community. " +
+        "Take the initiative in being lead in the project.\"";
+
+    }
+    function mouseOver2() {
+        x.innerHTML = "";
+        x.style.width = "65%";
+        x.innerHTML = "" +
+        "\"Here are our phone numbers and emails.\"";
+
+    }
+
+    function mouseOut() {
+        x.innerHTML = "";
+        x.style.width = "55%";
+        x.innerHTML = "\"Huarache Power!" +
+        "Join the Clan and make a difference in your community.\"";
+    }
+</script>
+</body>
+</html>
